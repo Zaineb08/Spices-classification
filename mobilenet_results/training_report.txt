@@ -2,7 +2,7 @@
 ================================================================================
 RAPPORT D'ENTRAÎNEMENT - MOBILENETV3
 Classification d'Épices Marocaines
-Date: 2026-02-06 00:31:11
+Date: 2026-02-06 03:45:36
 ================================================================================
 
 1. CONFIGURATION
@@ -17,7 +17,7 @@ Hyperparamètres:
   - Batch size: 16
   - Initial learning rate: 0.001
   - Weight decay: 0.0001
-  - Epochs trained: 13
+  - Epochs trained: 20
   - Total parameters: 4,216,123
   - Trainable parameters: 4,216,123
 
@@ -37,20 +37,21 @@ Augmentation (training):
 
 3. RÉSULTATS D'ENTRAÎNEMENT
 --------------------------------------------------------------------------------
-Meilleure validation accuracy: 94.85%
-Test accuracy: 94.24%
+Meilleure validation accuracy: 95.15%
+Test accuracy: 94.85%
+Temps total d'entraînement: 117.0 minutes
 
 Dernière epoch:
-  - Train Loss: 0.1868
-  - Train Acc: 93.77%
-  - Val Loss: 0.2057
-  - Val Acc: 94.85%
+  - Train Loss: 0.1617
+  - Train Acc: 94.94%
+  - Val Loss: 0.2103
+  - Val Acc: 94.55%
 
 4. MÉTRIQUES GLOBALES (TEST SET)
 --------------------------------------------------------------------------------
-Precision moyenne: 0.9426
-Recall moyen: 0.9424
-F1-Score moyen: 0.9424
+Precision moyenne: 0.9484
+Recall moyen: 0.9485
+F1-Score moyen: 0.9483
 
 5. TOP ET BOTTOM CLASSES
 --------------------------------------------------------------------------------
@@ -62,12 +63,12 @@ Meilleures performances (F1-Score):
 
 Performances les plus faibles (F1-Score):
   10. poivre noir: 0.8814
-  6. cumin: 0.8852
-  7. curcuma: 0.9000
+  6. cumin: 0.9000
+  7. curcuma: 0.9153
 
 6. FICHIERS GÉNÉRÉS
 --------------------------------------------------------------------------------
-Modèle: C:\Users\zaineb\Desktop\spices 5-2\models\best_model.pth
+Modèle: C:\Users\zaineb\Desktop\spices 5-2\models\model_mobilenetv3.pth
 Courbes d'entraînement: C:\Users\zaineb\Desktop\spices 5-2\mobilenet_results\training_curves.png
 Matrice de confusion: C:\Users\zaineb\Desktop\spices 5-2\mobilenet_results\confusion_matrix.png
 Rapport de classification: C:\Users\zaineb\Desktop\spices 5-2\mobilenet_results\classification_report.txt
