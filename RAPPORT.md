@@ -189,6 +189,22 @@ On observe que ResNet-50 offre déjà une **très bonne précision**, mais avec 
 - des **temps d'entraînement** plus longs que MobileNetV3 ;
 - une efficacité globale inférieure à EfficientNet-B3 pour ce dataset.
 
+#### 2.5.1 Visuels principaux (ResNet-50)
+
+Les figures suivantes sont générées par le notebook et stockées dans le dossier `resnet_results` :
+
+- Courbes d'entraînement (loss et accuracy) :
+
+  ![Courbes d'entraînement ResNet-50](resnet_results/loss accuracy.png)
+
+- Matrice de confusion sur le jeu de test :
+
+  ![Matrice de confusion ResNet-50](resnet_results/matrice confusion.png)
+
+- Exemple de Grad-CAM (épice "anis") :
+
+  ![Grad-CAM ResNet-50 sur anis](resnet_results/grad cam anis.png)
+
 ### 2.6 Rôle de ResNet-50 dans le projet
 
 ResNet-50 sert de **baseline puissante** :
@@ -284,6 +300,22 @@ Le notebook calcule et affiche :
 - des statistiques par classe (meilleures / pires classes).
 
 Les erreurs restantes concernent essentiellement des classes **visuellement très proches** (couleur / texture similaires), ce qui est cohérent avec la difficulté du problème.
+
+#### 3.6.1 Visuels principaux (EfficientNet-B3)
+
+Les figures suivantes sont générées par le notebook et stockées dans le dossier `efficientnet_results` :
+
+- Courbes d'entraînement (loss et accuracy) :
+
+  ![Courbes d'entraînement EfficientNet-B3](efficientnet_results/loss and accuracy.png)
+
+- Matrice de confusion sur le jeu de test :
+
+  ![Matrice de confusion EfficientNet-B3](efficientnet_results/matrice confusion.png)
+
+- Exemple de Grad-CAM (épice "cannelle") :
+
+  ![Grad-CAM EfficientNet-B3 sur cannelle](efficientnet_results/gradcam cannelle.png)
 
 ### 3.7 Grad-CAM et interprétabilité
 
