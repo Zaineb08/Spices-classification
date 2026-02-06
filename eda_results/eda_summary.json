@@ -1,0 +1,62 @@
+{
+  "dataset_structure": {
+    "total_classes": 11,
+    "total_images": 2200,
+    "train_images": 1540,
+    "val_images": 330,
+    "test_images": 330,
+    "classes": [
+      "anis",
+      "cannelle",
+      "carvi",
+      "clou_girofle",
+      "cubebe",
+      "cumin",
+      "curcuma",
+      "gingembre",
+      "paprika",
+      "poivre noir",
+      "safran"
+    ]
+  },
+  "image_dimensions": {
+    "width_min": 384,
+    "width_max": 4000,
+    "width_mean": 610.1915584415584,
+    "height_min": 384,
+    "height_max": 4000,
+    "height_mean": 700.9805194805194,
+    "color_modes": [
+      "RGB"
+    ]
+  },
+  "balance_metrics": {
+    "min_images_per_class": 140,
+    "max_images_per_class": 140,
+    "is_balanced": true
+  },
+  "color_statistics": {
+    "mean_rgb": {
+      "R": 158.25211285732928,
+      "G": 146.38676208774552,
+      "B": 136.27767114553205
+    },
+    "std_rgb": {
+      "R": 23.616576803934812,
+      "G": 27.879604709207538,
+      "B": 32.44557947505681
+    }
+  },
+  "luminosity_statistics": {
+    "mean": 148.78890698664898,
+    "std": 42.013063220957115,
+    "min": 34.637062072753906,
+    "max": 254.2325314670139,
+    "brightest_class": "poivre noir",
+    "darkest_class": "curcuma"
+  },
+  "duplicate_analysis": {
+    "duplicate_groups": 113,
+    "has_duplicates": true
+  }
+}

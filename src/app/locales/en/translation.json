@@ -1,0 +1,52 @@
+{
+  "app": {
+    "title": "Moroccan Spices Classification",
+    "subtitle": "AI-Powered Recognition",
+    "description": "Classify Moroccan spices using advanced deep learning"
+  },
+  "upload": {
+    "title": "📸 Upload a Spice Image",
+    "dragDrop": "Drag and drop your image here",
+    "or": "or",
+    "browse": "Browse",
+    "fileInfo": "File selected",
+    "maxSize": "Maximum file size is 10MB"
+  },
+  "results": {
+    "title": "📊 Classification Results",
+    "detectedSpice": "Detected Spice",
+    "confidence": "Confidence",
+    "topPredictions": "Top 3 Predictions",
+    "newClassification": "New Classification"
+  },
+  "spices": {
+    "title": "📚 Available Spice Classes",
+    "anis": "Anise",
+    "cannelle": "Cinnamon",
+    "carvi": "Caraway",
+    "clou_girofle": "Clove",
+    "cubebe": "Cubeb",
+    "cumin": "Cumin",
+    "curcuma": "Turmeric",
+    "gingembre": "Ginger",
+    "paprika": "Paprika",
+    "poivre_noir": "Black Pepper",
+    "safran": "Saffron"
+  },
+  "model": {
+    "title": "🤖 Model Information",
+    "model": "Model",
+    "testAccuracy": "Test Accuracy",
+    "parameters": "Parameters",
+    "approach": "Approach"
+  },
+  "errors": {
+    "noImage": "No image provided",
+    "invalidFile": "File type not allowed. Use: jpg, jpeg, png, gif",
+    "fileNotSelected": "No file selected",
+    "fileTooLarge": "File too large. Maximum size is 10MB",
+    "connectionError": "Connection error",
+    "modelError": "Model error"
+  },
+  "language": "Language"
+}

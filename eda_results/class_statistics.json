@@ -1,0 +1,134 @@
+{
+  "anis": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 148.0501681373233,
+      "G": 145.0180745442708,
+      "B": 143.41011463952447
+    },
+    "mean_luminosity": 145.7503666469029,
+    "luminosity_std": 11.704100118324453
+  },
+  "cannelle": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 173.71271122325473,
+      "G": 161.52329132103375,
+      "B": 155.64431614773488
+    },
+    "mean_luminosity": 164.50028654732185,
+    "luminosity_std": 47.89065228582781
+  },
+  "carvi": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 159.3748520139663,
+      "G": 144.76473999023435,
+      "B": 130.21783432733446
+    },
+    "mean_luminosity": 147.48060501340836,
+    "luminosity_std": 15.105920878032057
+  },
+  "clou_girofle": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 197.27200041121137,
+      "G": 191.19430835802547,
+      "B": 188.83532312937731
+    },
+    "mean_luminosity": 192.74591907126353,
+    "luminosity_std": 58.73229114308632
+  },
+  "cubebe": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 147.9124142601376,
+      "G": 136.07193143329926,
+      "B": 129.4356725783575
+    },
+    "mean_luminosity": 138.8686002701048,
+    "luminosity_std": 14.987482379373887
+  },
+  "cumin": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 139.55038691929408,
+      "G": 124.87208311898368,
+      "B": 112.67905292510986
+    },
+    "mean_luminosity": 127.87270976475307,
+    "luminosity_std": 22.777612815625076
+  },
+  "curcuma": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 135.8755821924361,
+      "G": 113.59166567363437,
+      "B": 87.88953158968972
+    },
+    "mean_luminosity": 117.33098149678065,
+    "luminosity_std": 22.09755187753967
+  },
+  "gingembre": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 131.64437432364812,
+      "G": 125.27144158681232,
+      "B": 114.79202252342589
+    },
+    "mean_luminosity": 125.98559763772147,
+    "luminosity_std": 26.278349671748625
+  },
+  "paprika": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 150.1275808061872,
+      "G": 120.49806330544608,
+      "B": 109.3493454524449
+    },
+    "mean_luminosity": 128.0916315623692,
+    "luminosity_std": 24.205607632363662
+  },
+  "poivre noir": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 202.59441777533027,
+      "G": 198.9812684237178,
+      "B": 192.54673971588463
+    },
+    "mean_luminosity": 199.33548248086228,
+    "luminosity_std": 57.55642060726362
+  },
+  "safran": {
+    "train_count": 140,
+    "val_count": 30,
+    "test_count": 30,
+    "mean_rgb": {
+      "R": 154.65875336783273,
+      "G": 148.46751520974294,
+      "B": 134.25442957196915
+    },
+    "mean_luminosity": 148.71579636165075,
+    "luminosity_std": 18.524581118384983
+  }
+}

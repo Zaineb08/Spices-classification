@@ -1,0 +1,78 @@
+
+================================================================================
+RAPPORT D'ENTRAÎNEMENT - MOBILENETV3
+Classification d'Épices Marocaines
+Date: 2026-02-06 00:31:11
+================================================================================
+
+1. CONFIGURATION
+--------------------------------------------------------------------------------
+Architecture: MobileNetV3-Large
+Transfer Learning: ImageNet pré-entraîné
+Nombre de classes: 11
+Classes: anis, cannelle, carvi, clou_girofle, cubebe, cumin, curcuma, gingembre, paprika, poivre noir, safran
+
+Hyperparamètres:
+  - Image size: 224×224
+  - Batch size: 16
+  - Initial learning rate: 0.001
+  - Weight decay: 0.0001
+  - Epochs trained: 13
+  - Total parameters: 4,216,123
+  - Trainable parameters: 4,216,123
+
+2. DONNÉES
+--------------------------------------------------------------------------------
+Train set: 1540 images
+Validation set: 330 images
+Test set: 330 images
+Total: 2200 images
+
+Augmentation (training):
+  - Random Horizontal Flip (50%)
+  - Random Vertical Flip (30%)
+  - Random Rotation (±20°)
+  - Color Jitter
+  - Random Affine
+
+3. RÉSULTATS D'ENTRAÎNEMENT
+--------------------------------------------------------------------------------
+Meilleure validation accuracy: 94.85%
+Test accuracy: 94.24%
+
+Dernière epoch:
+  - Train Loss: 0.1868
+  - Train Acc: 93.77%
+  - Val Loss: 0.2057
+  - Val Acc: 94.85%
+
+4. MÉTRIQUES GLOBALES (TEST SET)
+--------------------------------------------------------------------------------
+Precision moyenne: 0.9426
+Recall moyen: 0.9424
+F1-Score moyen: 0.9424
+
+5. TOP ET BOTTOM CLASSES
+--------------------------------------------------------------------------------
+
+Meilleures performances (F1-Score):
+  3. carvi: 1.0000
+  5. cubebe: 0.9836
+  8. gingembre: 0.9831
+
+Performances les plus faibles (F1-Score):
+  10. poivre noir: 0.8814
+  6. cumin: 0.8852
+  7. curcuma: 0.9000
+
+6. FICHIERS GÉNÉRÉS
+--------------------------------------------------------------------------------
+Modèle: C:\Users\zaineb\Desktop\spices 5-2\models\best_model.pth
+Courbes d'entraînement: C:\Users\zaineb\Desktop\spices 5-2\mobilenet_results\training_curves.png
+Matrice de confusion: C:\Users\zaineb\Desktop\spices 5-2\mobilenet_results\confusion_matrix.png
+Rapport de classification: C:\Users\zaineb\Desktop\spices 5-2\mobilenet_results\classification_report.txt
+Métriques par classe: C:\Users\zaineb\Desktop\spices 5-2\mobilenet_results\per_class_metrics.csv
+
+================================================================================
+FIN DU RAPPORT
+================================================================================

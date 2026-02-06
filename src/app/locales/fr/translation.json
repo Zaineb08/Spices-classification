@@ -1,0 +1,52 @@
+{
+  "app": {
+    "title": "Classification des Épices Marocaines",
+    "subtitle": "Reconnaissance par IA",
+    "description": "Classifiez les épices marocaines à l'aide du deep learning avancé"
+  },
+  "upload": {
+    "title": "📸 Téléchargez une image d'épice",
+    "dragDrop": "Glissez et déposez votre image ici",
+    "or": "ou",
+    "browse": "Parcourir",
+    "fileInfo": "Fichier sélectionné",
+    "maxSize": "La taille maximale du fichier est de 10 Mo"
+  },
+  "results": {
+    "title": "📊 Résultats de la Classification",
+    "detectedSpice": "Épice Détectée",
+    "confidence": "Confiance",
+    "topPredictions": "Top 3 Prédictions",
+    "newClassification": "Nouvelle Classification"
+  },
+  "spices": {
+    "title": "📚 Classes d'Épices Disponibles",
+    "anis": "Anis",
+    "cannelle": "Cannelle",
+    "carvi": "Carvi",
+    "clou_girofle": "Clou de Girofle",
+    "cubebe": "Cubèbe",
+    "cumin": "Cumin",
+    "curcuma": "Curcuma",
+    "gingembre": "Gingembre",
+    "paprika": "Paprika",
+    "poivre_noir": "Poivre Noir",
+    "safran": "Safran"
+  },
+  "model": {
+    "title": "🤖 Informations du Modèle",
+    "model": "Modèle",
+    "testAccuracy": "Précision Test",
+    "parameters": "Paramètres",
+    "approach": "Approche"
+  },
+  "errors": {
+    "noImage": "Aucune image fournie",
+    "invalidFile": "Type de fichier non autorisé. Utilisez: jpg, jpeg, png, gif",
+    "fileNotSelected": "Aucun fichier sélectionné",
+    "fileTooLarge": "Fichier trop volumineux. La taille maximale est de 10 Mo",
+    "connectionError": "Erreur de connexion",
+    "modelError": "Erreur du modèle"
+  },
+  "language": "Langue"
+}
