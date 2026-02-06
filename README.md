@@ -63,8 +63,7 @@ Les données sont réparties en ensembles `train`, `val`, et `test`.
 1.  **Clonez le dépôt :**
 
     ```bash
-    git clone <url-du-depot>
-    cd spices-5-2
+    git clone <https://github.com/Zaineb08/Spices-classification.git>
     ```
 
 2.  **Créez un environnement virtuel (recommandé) :**
@@ -88,7 +87,6 @@ L'application web dispose d'un **backend Flask** (port 5000) et d'un **frontend 
 **Terminal 1:**
 
 ```bash
-cd "c:\Users\zaineb\Desktop\spices 5-2"
 conda activate spices    # Ou votre environnement Python
 python app.py
 ```
@@ -168,7 +166,7 @@ D'après l'analyse, **EfficientNet-B3** a obtenu les meilleures performances sur
 | :---------------- | :------------------: | :------------: | :--------: |
 | ResNet-50         |        98.48%        |     97.58%     |   24.56M   |
 | EfficientNet-B3   |        98.79%        |     98.79%     |   10.71M   |
-| MobileNetV3-Large |         N/A          |      N/A       |    N/A     |
+| MobileNetV3-Large |        94.85%        |     94.24%     |   4.22M    |
 
 ### Détails des Modèles
 
@@ -189,9 +187,10 @@ D'après l'analyse, **EfficientNet-B3** a obtenu les meilleures performances sur
 
 #### MobileNetV3-Large (Apprentissage par Transfert)
 
-- **Précision de validation**: N/A
-- **Précision sur l'ensemble test**: N/A
-- **Paramètres totaux**: N/A
+- **Approche**: Transfer learning avec MobileNetV3-Large, conçu pour un usage léger et rapide (CPU/mobile).
+- **Précision de validation**: 94.85%
+- **Précision sur l'ensemble test**: 94.24%
+- **Paramètres totaux**: 4,216,123 (~4.22M)
 - **Approche**: Transfer learning avec MobileNetV3-Large, conçu pour un usage léger et rapide (CPU/mobile).
 
 ### Analyse Comparative
