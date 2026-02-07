@@ -18,7 +18,7 @@ export const SPICE_DATABASE: Record<string, SpiceInfo> = {
   anis: {
     id: 'anis',
     name: 'Anise',
-    nameArabic: 'اليانسون',
+    nameArabic: 'حبة حلاوة',
     nameFrench: 'Anis',
     description: 'Anise is a flowering plant native to the Mediterranean and Southwest Asia. Its seeds have a distinct licorice-like flavor.',
     origin: 'Mediterranean region',
@@ -80,7 +80,7 @@ export const SPICE_DATABASE: Record<string, SpiceInfo> = {
   carvi: {
     id: 'carvi',
     name: 'Caraway',
-    nameArabic: 'الكراوية',
+    nameArabic: 'الكروية',
     nameFrench: 'Carvi',
     description: 'Caraway seeds have been used for thousands of years in North African cuisine, prized for their distinctive earthy flavor.',
     origin: 'Western Asia, Europe, and North Africa',
@@ -104,7 +104,7 @@ export const SPICE_DATABASE: Record<string, SpiceInfo> = {
     ],
     pairsWith: ['cumin', 'coriander', 'fennel', 'paprika'],
     color: '#8b7355',
-    flavor: 'Earthy, slightly bitter, anise-like',
+    flavor: 'Earthy, slightly bitter',
     commonDishes: ['Harira soup', 'Lamb tagines', 'Meat stews'],
   },
   

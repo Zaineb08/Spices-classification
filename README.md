@@ -248,7 +248,6 @@ static/
   ├── style.css          # Styles
   └── script.js          # Logique client
 requirements.txt     # Dépendances Python
-DEPLOYMENT.md            # Guide de déploiement détaillé
 ```
 
 ### API Endpoints
