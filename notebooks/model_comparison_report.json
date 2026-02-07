@@ -1,22 +1,22 @@
 {
   "comparison": [
     {
-      "Modèle": "ResNet-50",
+      "Mod\u00e8le": "ResNet-50",
       "Val Accuracy (%)": "98.48",
       "Test Accuracy (%)": "97.58",
-      "Paramètres (M)": "24.56"
+      "Param\u00e8tres (M)": "24.56"
     },
     {
-      "Modèle": "EfficientNet-B3",
+      "Mod\u00e8le": "EfficientNet-B3",
       "Val Accuracy (%)": "98.79",
       "Test Accuracy (%)": "98.79",
-      "Paramètres (M)": "10.71"
+      "Param\u00e8tres (M)": "10.71"
     },
     {
-      "Modèle": "MobileNetV3-Large",
+      "Mod\u00e8le": "MobileNetV3-Large",
       "Val Accuracy (%)": "95.15",
       "Test Accuracy (%)": "94.85",
-      "Paramètres (M)": "4.22"
+      "Param\u00e8tres (M)": "4.22"
     }
   ],
   "best_accuracy": {
@@ -29,6 +29,6 @@
   },
   "best_efficiency": {
     "model": "MobileNetV3-Large",
-    "score": 22.4969717439458
+    "score": 22.49661237314112
   }
 }

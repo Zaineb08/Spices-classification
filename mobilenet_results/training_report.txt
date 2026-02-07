@@ -2,7 +2,7 @@
 ================================================================================
 RAPPORT D'ENTRAÎNEMENT - MOBILENETV3
 Classification d'Épices Marocaines
-Date: 2026-02-06 03:45:36
+Date: 2026-02-07 19:52:35
 ================================================================================
 
 1. CONFIGURATION
@@ -39,7 +39,7 @@ Augmentation (training):
 --------------------------------------------------------------------------------
 Meilleure validation accuracy: 95.15%
 Test accuracy: 94.85%
-Temps total d'entraînement: 117.0 minutes
+Temps total d'entraînement: 70.4 minutes
 
 Dernière epoch:
   - Train Loss: 0.1617
