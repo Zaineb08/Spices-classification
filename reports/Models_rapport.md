@@ -392,16 +392,16 @@ Le notebook genere aussi :
 
 #### 4.5.1 Visuels principaux (CNN Custom)
 
-Les figures suivantes sont generees par le notebook et stockees dans le dossier `models` :
+Les figures suivantes sont generees par le notebook et stockees dans le dossier `cnn_results` :
 
 - Courbes d'entrainement (loss et accuracy) :
 
-  ![Courbes d'entrainement CNN Custom](models/training_curves_cnn_custom.png)
+  ![Courbes d'entrainement CNN Custom](cnn_results/training_curves_cnn_custom.png)
 
 - Matrice de confusion sur le jeu de test :
 
-  ![Matrice de confusion CNN Custom](models/confusion_matrix_cnn_custom.png)
+  ![Matrice de confusion CNN Custom](cnn_results/confusion_matrix_cnn_custom.png)
 
 - Exemple Grad-CAM (image du test) :
 
-  ![Grad-CAM CNN Custom](models/gradcam_example_1.png)
+  ![Grad-CAM CNN Custom](cnn_results/gradcam%20cnn.png)
