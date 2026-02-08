@@ -98,15 +98,15 @@ Les figures suivantes sont générées par le notebook et stockées dans le doss
 
 - Courbes d'entraînement (loss et accuracy) :
 
-  ![Courbes d'entraînement MobileNetV3](mobilenet_results/training_curves.png)
+  ![Courbes d'entraînement MobileNetV3](../mobilenet_results/training_curves.png)
 
 - Matrice de confusion sur le jeu de test :
 
-  ![Matrice de confusion MobileNetV3](mobilenet_results/confusion_matrix.png)
+  ![Matrice de confusion MobileNetV3](../mobilenet_results/confusion_matrix.png)
 
 - F1-score par classe :
 
-  ![F1-score par classe MobileNetV3](mobilenet_results/per_class_metrics.png)
+  ![F1-score par classe MobileNetV3](../mobilenet_results/per_class_metrics.png)
 
 ### 1.6 Pourquoi MobileNetV3 est plus rapide
 
@@ -196,15 +196,15 @@ Les figures suivantes sont générées par le notebook et stockées dans le doss
 
 - Courbes d'entraînement (loss et accuracy) :
 
-  ![Courbes d'entraînement ResNet-50](resnet_results/loss%20accuracy.png)
+  ![Courbes d'entraînement ResNet-50](../resnet_results/loss%20accuracy.png)
 
 - Matrice de confusion sur le jeu de test :
 
-  ![Matrice de confusion ResNet-50](resnet_results/matrice%20confusion.png)
+  ![Matrice de confusion ResNet-50](../resnet_results/matrice%20confusion.png)
 
 - Exemple de Grad-CAM (épice "anis") :
 
-  ![Grad-CAM ResNet-50 sur anis](resnet_results/grad%20cam%20anis.png)
+  ![Grad-CAM ResNet-50 sur anis](../resnet_results/grad%20cam%20anis.png)
 
 ### 2.6 Rôle de ResNet-50 dans le projet
 
@@ -308,15 +308,15 @@ Les figures suivantes sont générées par le notebook et stockées dans le doss
 
 - Courbes d'entraînement (loss et accuracy) :
 
-  ![Courbes d'entraînement EfficientNet-B3](efficientnet_results/loss%20and%20accuracy.png)
+  ![Courbes d'entraînement EfficientNet-B3](../efficientnet_results/loss%20and%20accuracy.png)
 
 - Matrice de confusion sur le jeu de test :
 
-  ![Matrice de confusion EfficientNet-B3](efficientnet_results/matrice%20confusion.png)
+  ![Matrice de confusion EfficientNet-B3](../efficientnet_results/matrice%20confusion.png)
 
 - Exemple de Grad-CAM (épice "cannelle") :
 
-  ![Grad-CAM EfficientNet-B3 sur cannelle](efficientnet_results/gradcam%20cannelle.png)
+  ![Grad-CAM EfficientNet-B3 sur cannelle](../efficientnet_results/gradcam%20cannelle.png)
 
 ### 3.7 Grad-CAM et interprétabilité
 
@@ -396,12 +396,12 @@ Les figures suivantes sont generees par le notebook et stockees dans le dossier 
 
 - Courbes d'entrainement (loss et accuracy) :
 
-  ![Courbes d'entrainement CNN Custom](cnn_results/training_curves_cnn_custom.png)
+  ![Courbes d'entrainement CNN Custom](../cnn_results/training_curves_cnn_custom.png)
 
 - Matrice de confusion sur le jeu de test :
 
-  ![Matrice de confusion CNN Custom](cnn_results/confusion_matrix_cnn_custom.png)
+  ![Matrice de confusion CNN Custom](../cnn_results/confusion_matrix_cnn_custom.png)
 
 - Exemple Grad-CAM (image du test) :
 
-  ![Grad-CAM CNN Custom](cnn_results/gradcam%20cnn.png)
+  ![Grad-CAM CNN Custom](../cnn_results/gradcam%20cnn.png)
