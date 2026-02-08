@@ -1,6 +1,12 @@
 {
   "comparison": [
     {
+      "Mod\u00e8le": "CNN Custom",
+      "Val Accuracy (%)": "76.06",
+      "Test Accuracy (%)": "85.45",
+      "Param\u00e8tres (M)": "4.82"
+    },
+    {
       "Mod\u00e8le": "ResNet-50",
       "Val Accuracy (%)": "98.48",
       "Test Accuracy (%)": "97.58",
