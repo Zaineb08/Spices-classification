@@ -1,10 +1,11 @@
-# Rapport sur les notebooks de modèles (MobileNetV3, ResNet-50, EfficientNet-B3)
+# Rapport sur les notebooks de modèles (CNN Custom, MobileNetV3, ResNet-50, EfficientNet-B3)
 
 Ce document résume et explique le contenu des principaux notebooks de modèles utilisés dans le projet de classification d'épices marocaines :
 
-1. `mobilenetv3_training.ipynb`
-2. `03_model_resnet.ipynb`
-3. `04_model_efficientnet.ipynb`
+1. `02_model_cnn_custom.ipynb`
+2. `mobilenetv3_training.ipynb`
+3. `03_model_resnet.ipynb`
+4. `04_model_efficientnet.ipynb`
 
 Pour chaque notebook, on décrit : l'objectif, la préparation des données, l'architecture, la stratégie d'entraînement, les résultats et les points à retenir.
 
@@ -73,8 +74,8 @@ Le notebook calcule notamment :
 
 Les principaux résultats obtenus pour MobileNetV3-Large sont :
 
-- **Meilleure validation accuracy** : **94,85 %** ;
-- **Test accuracy** : **94,24 %** (sur 330 images de test) ;
+- **Meilleure validation accuracy** : **95,15 %** ;
+- **Test accuracy** : **94,85 %** (sur 330 images de test) ;
 - **F1-score moyen (macro)** sur le test : **0,9424** ;
 - **Nombre total de paramètres** : **4 216 123** (tous entraînables dans la configuration actuelle).
 
@@ -111,7 +112,7 @@ Les figures suivantes sont générées par le notebook et stockées dans le doss
 
 Dans ce projet, MobileNetV3 est plus rapide que ResNet-50 et EfficientNet-B3 pour plusieurs raisons :
 
-- **Moins de paramètres** (~3 M contre 10,7 M pour EfficientNet-B3 et 24,6 M pour ResNet-50) ;
+- **Moins de paramètres** (~4,2 M contre 10,7 M pour EfficientNet-B3 et 24,6 M pour ResNet-50) ;
 - **Convolutions depthwise separable** et blocs MBConv qui réduisent fortement le nombre de FLOPs ;
 - **Taille d'entrée plus petite** (224×224 vs 300×300 pour EfficientNet-B3) → moins de pixels à traiter ;
 - **Backbone gelé au début**, donc moins de poids mis à jour au début de l'entraînement.
@@ -347,3 +348,60 @@ Il représente donc le **meilleur compromis** :
 - suffisamment rapide pour une API en production.
 
 C'est ce modèle qui est chargé dans `app.py` et utilisé par le front-end React pour la classification d'images d'épices.
+
+---
+
+## 4. Notebook CNN Custom — `02_model_cnn_custom.ipynb`
+
+### 4.1 Objectif du notebook
+
+Ce notebook entraine un modele **CNN Custom** (4 blocs convolutionnels) avec une pipeline complete : preparation des donnees, entrainement, evaluation, et **Grad-CAM** pour l'explicabilite. L'objectif est d'avoir une base personnalisable et interpretable.
+
+### 4.2 Preparation des donnees
+
+- Dataset organise en dossiers par classe (11 epices).
+- Transformations : resize 224x224, augmentation (rotations, flips, jitter), puis normalisation ImageNet.
+- Creation de `DataLoader` pour train/val/test avec `num_workers=0` sur Windows.
+
+### 4.3 Architecture CNN Custom
+
+- 4 blocs convolutionnels (3→64→128→256→512 canaux).
+- BatchNorm + ReLU + MaxPool a chaque bloc.
+- Global Average Pooling puis MLP avec dropout.
+- Nombre total de parametres : **4 823 371**.
+
+### 4.4 Strategie d'entrainement
+
+- Optimiseur : Adam ; Scheduler : ReduceLROnPlateau.
+- Training en mixed precision si GPU disponible.
+- Sauvegarde du meilleur checkpoint sur validation.
+
+### 4.5 Resultats et metriques
+
+Les principaux resultats obtenus pour CNN Custom sont :
+
+- **Meilleure validation accuracy** : **76,06 %** ;
+- **Test accuracy** : **85,45 %** ;
+- **Nombre total de parametres** : **4,82 M**.
+
+Le notebook genere aussi :
+
+- courbes d'entrainement (loss et accuracy) ;
+- matrice de confusion ;
+- visualisations **Grad-CAM** sur des images du test.
+
+#### 4.5.1 Visuels principaux (CNN Custom)
+
+Les figures suivantes sont generees par le notebook et stockees dans le dossier `models` :
+
+- Courbes d'entrainement (loss et accuracy) :
+
+  ![Courbes d'entrainement CNN Custom](models/training_curves_cnn_custom.png)
+
+- Matrice de confusion sur le jeu de test :
+
+  ![Matrice de confusion CNN Custom](models/confusion_matrix_cnn_custom.png)
+
+- Exemple Grad-CAM (image du test) :
+
+  ![Grad-CAM CNN Custom](models/gradcam_example_1.png)
