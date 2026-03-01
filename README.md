@@ -6,34 +6,44 @@ Ce projet vise à classifier des images de 11 épices marocaines différentes à
 
 ```
 spices-5-2/
-├── src/
-│   └── ...
+├── app.py
+├── README.md
+├── requirements.txt
 ├── dataset/
-│   ├── splits/
-│   │   ├── train/
-│   │   ├── test/
-│   │   └── val/
-├── eda_results/
-│   ├── images/
-│   └── *.json, *.csv
+│   └── splits/
+│       ├── train/
+│       ├── test/
+│       └── val/
 ├── models/
 │   ├── *.pth
 │   └── *.json
 ├── notebooks/
-│   ├── 01_EDA_Epices_Marocaines oum.ipynb
+│   ├── 01_EDA_Epices_Marocaines.ipynb
 │   ├── 02_model_cnn_custom.ipynb
 │   ├── 03_model_resnet.ipynb
 │   ├── 04_model_efficientnet.ipynb
-│   ├── mobilenetv3_training.ipynb
-│   └── 05_model_comparison.ipynb
+│   ├── 05_mobilenetv3_training.ipynb
+│   ├── 06_model_comparison.ipynb
+│   └── eda_additionnal.ipynb
+├── resultats/
+│   ├── eda_results/
+│   │   ├── images/
+│   │   └── *.json, *.csv
+│   ├── cnn_results/
+│   ├── efficientnet_results/
+│   ├── mobilenet_results/
+│   └── resnet_results/
 ├── scripts/
 │   ├── balance_dataset.py
-│   └── preprocess_phone_images.py
-└── requirements.txt
+│   ├── preprocess_phone_images.py
+│   └── simple_cnn_training.py
+├── src/
+│   └── ...
+└── uploads/
 ```
 
 - **dataset/splits/**: Contient les ensembles d'images d'entraînement, de validation et de test, organisés par classe d'épice.
-- **eda_results/**: Stocke les résultats de l'Analyse Exploratoire des Données (EDA), y compris les graphiques et les statistiques.
+- **resultats/**: Stocke les résultats d'analyse et d'entraînement (EDA, CNN, EfficientNet, MobileNet, ResNet).
 - **models/**: Poids des modèles sauvegardés (`.pth`) et métriques de performance (`.json`).
 - **notebooks/**: Notebooks Jupyter pour les différentes étapes du projet.
 - **scripts/**: Scripts Python pour le prétraitement et l'équilibrage des données.
@@ -80,9 +90,65 @@ Les données sont réparties en ensembles `train`, `val`, et `test`.
 
 ## 🚀 Quick Start - Comment Démarrer l'Application
 
-L'application web dispose d'un **backend Flask** (port 5000) et d'un **frontend React** (port 5173). Vous devez démarrer les deux serveurs.
+### Option 1: Docker (Recommandé - Déploiement Simple)
 
-### Backend (Flask - Modèle ML)
+**Prérequis** :
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) installé et démarré
+
+**Étapes** :
+
+1. Ouvrez un terminal (PowerShell ou CMD sur Windows, Terminal sur macOS/Linux) dans le dossier du projet :
+
+   ```bash
+   cd path/to/spices-5-2
+   ```
+
+2. Démarrez l'application :
+
+   ```bash
+   docker compose up -d --build
+   ```
+
+3. Attendez que les conteneurs se lancent (15-30 secondes selon votre machine).
+
+4. Ouvrez votre navigateur et allez à :
+
+   ```
+   http://localhost
+   ```
+
+5. Téléchargez une image d'épice et lancez la classification !
+
+**Arrêt** :
+
+```bash
+docker compose down
+```
+
+**Vérifier l'état** :
+
+```bash
+docker compose ps
+```
+
+**Voir les logs** :
+
+```bash
+docker compose logs -f
+```
+
+---
+
+### Option 2: Installation Locale (Python + Node.js)
+
+**Prérequis** :
+
+- Python 3.10+
+- Node.js 20+
+- Conda (optionnel mais recommandé)
+
+#### Backend (Flask - Modèle ML)
 
 **Terminal 1:**
 
@@ -93,7 +159,7 @@ python app.py
 
 L'API sera accessible à: `http://localhost:5000`
 
-### Frontend (React - Interface Web)
+#### Frontend (React - Interface Web)
 
 **Terminal 2:**
 
@@ -107,14 +173,15 @@ L'interface sera accessible à: `http://localhost:5173`
 
 ### Utilisation Complète
 
-1. Ouvrez `http://localhost:5173` dans votre navigateur
-2. Téléchargez une image d'épice
+1. Ouvrez l'interface Web (http://localhost ou http://localhost:5173)
+2. Téléchargez une image d'épice (ou cliquez sur "Take Photo")
 3. Attendez la classification
 4. Consultez les résultats avec les confiances (top 3)
 
-### Arrêt des Serveurs
+### Arrêt
 
-- Appuyez sur `Ctrl + C` dans chaque terminal
+- **Docker** : `docker compose down`
+- **Local** : Appuyez sur `Ctrl + C` dans chaque terminal
 
 ---
 
