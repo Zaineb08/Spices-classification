@@ -1,0 +1,56 @@
+================================================================================
+       MOROCCAN SPICE CLASSIFICATION - Quick Start Guide
+================================================================================
+
+BEFORE YOU START:
+- Install Docker Desktop (https://www.docker.com/products/docker-desktop)
+- Unzip this folder
+- Open a terminal (PowerShell on Windows, Terminal on macOS/Linux)
+
+================================================================================
+STEPS TO RUN THE APPLICATION:
+================================================================================
+
+1. Navigate to the project folder:
+   cd path/to/spices-5-2
+
+2. Start the application:
+   docker compose up -d --build
+
+   (This will download and build the images - might take a few minutes on first run)
+
+3. Wait for the containers to start (you should see "Running" or "Up")
+
+4. Open your browser and go to:
+   http://localhost
+
+5. Upload a spice image and click "Predict" to see the classification!
+
+================================================================================
+TROUBLESHOOTING:
+================================================================================
+
+No containers running?
+   1. Check if Docker Desktop is open
+   2. Run: docker compose ps
+   3. Run: docker compose logs
+
+Want to stop the app?
+   docker compose down
+
+Want to restart?
+   docker compose restart
+
+Want to see logs?
+   docker compose logs -f
+
+Want to check if the API is working?
+   Open in browser: http://localhost/api/health
+
+Port 80 already in use? (Windows/WSL)
+   Change docker-compose.yml line 17 from "80:80" to "8080:80"
+   Then use: http://localhost:8080
+
+================================================================================
+For more details, see README.md
+================================================================================
